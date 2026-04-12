@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/output.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="m-0 p-0 box-border">
+  <!-- nav section start -->
+  <nav
+    class="w-full h-24 md:h-28 sticky top-0 w-full z-50 bg-[#0c2975] flex justify-between items-center px-4 sm:px-7 md:px-12">
+
+    <div class="w-2/3 md:w-3/5 lg:w-1/3 h-20 flex items-center justify-center">
+      <img class="w-full h-auto object-cover" src="https://www.uetmardan.edu.pk/uetm/new/img/logo/uet-logo14.png"
+        alt="" />
+    </div>
+
+    <div id="menu">
+      <ul class="hidden md:flex md:flex-wrap justify-end items-center gap-6 font-semibold text-indigo-100 uppercase text-[14px]
+                   [&>li]:relative [&>li]:cursor-pointer
+                   [&>li::after]:content-[''] [&>li::after]:absolute [&>li::after]:left-0
+                   [&>li::after]:bottom-0 [&>li::after]:w-0 [&>li::after]:h-[2px]
+                   [&>li::after]:bg-amber-400 [&>li::after]:transition-all [&>li::after]:duration-300
+                   [&>li:hover::after]:w-full">
+
+        <li>Home</li>
+
+        <li id="about" class="group">
+          About UETM
+          <div id="intro" class="invisible opacity-0 translate-y-2
+                        transition-all duration-300 ease-out
+                        absolute left-0 top-full mt-2 z-[999]
+                        w-[220px] bg-blue-600 text-white p-4
+                        border-t-2 border-amber-400 rounded-md shadow-lg
+                        [&>p]:my-1.5 [&>p]:cursor-pointer [&>p]:normal-case
+                        [&>p]:hover:text-yellow-300 [&>p]:hover:font-semibold
+                        [&>hr]:opacity-70">
+            <p>Introduction</p>
+            <hr>
+            <p>Message From Chancellor</p>
+            <hr>
+            <p>Message From Vice Chancellor</p>
+            <hr>
+            <p>Message From Pro Vice Chancellor</p>
+          </div>
+        </li>
+
+        <li id="admit" class="group">
+          Admissions
+          <div id="admission" class="invisible opacity-0 translate-y-2
+                        transition-all duration-300 ease-out
+                        absolute -left-60 top-full mt-2 z-[999]
+                        w-[60vw] bg-blue-800 text-white
+                        border-t-2 border-amber-400 rounded-md shadow-lg">
+            <div class="flex">
+              <div
+                class="w-1/2 py-2 bg-amber-400 text-white font-semibold uppercase text-sm flex items-center justify-center">
+                Undergraduate Admissions</div>
+              <div
+                class="w-1/2 py-2 bg-amber-400 text-white font-semibold uppercase text-sm flex items-center justify-center">
+                Post Graduate Admissions</div>
+            </div>
+            <div class="flex justify-around py-3">
+              <div class="[&>p]:my-2 [&>hr]:opacity-40">
+                <p class="par">Application Process</p>
+                <hr>
+                <p class="par">Online Apply (Non-Engineering)</p>
+                <hr>
+                <p class="par">Online Apply (Engineering)</p>
+                <hr>
+                <p class="par">Admission Notice</p>
+                <hr>
+                <p class="par">Admission Schedule</p>
+                <hr>
+                <p class="par">Programs Eligibility Criteria</p>
+                <hr>
+                <p class="par">Fee Structure</p>
+                <hr>
+                <p class="par">Merit List Preparation</p>
+                <hr>
+                <p class="par">Prospectus</p>
+                <hr>
+                <p class="par">Scholarships</p>
+              </div>
+              <div class="[&>p]:my-2 [&>hr]:opacity-40">
+                <p class="par">Application Process</p>
+                <hr>
+                <p class="par">Online Apply</p>
+                <hr>
+                <p class="par">Admission Notice</p>
+                <hr>
+                <p class="par">Admission Schedule</p>
+                <hr>
+                <p class="par">Programs Eligibility Criteria</p>
+                <hr>
+                <p class="par">Fee Structure</p>
+                <hr>
+                <p class="par">Merit List Preparation</p>
+                <hr>
+                <p class="par">Prospectus</p>
+                <hr>
+                <p class="par">Scholarships</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li id="academic" class="group">
+          Academics
+          <div id="academics" class="invisible opacity-0 translate-y-2
+                        transition-all duration-300 ease-out
+                        absolute left-0 top-full mt-2 z-[999]
+                        w-[230px] bg-blue-800 text-white p-4
+                        border-t-2 border-amber-400 rounded-md shadow-lg
+                        [&>p]:my-1.5 [&>hr]:opacity-70">
+            <p class="par">Message from Dean</p>
+            <hr>
+            <p class="par">Administration</p>
+            <hr>
+            <p class="par">Dept. of Electrical Engineering</p>
+            <hr>
+            <p class="par">Dept. of Software Engineering</p>
+            <hr>
+            <p class="par">Dept. of Mechanical Engineering</p>
+            <hr>
+            <p class="par">Dept. of Civil Engineering</p>
+            <hr>
+            <p class="par">Dept. of Computer Science</p>
+            <hr>
+            <p class="par">Dept. of Natural Health & Sciences</p>
+            <hr>
+            <p class="par">Center of Artificial Intelligence</p>
+          </div>
+        </li>
+
+        <li id="qec" class="group">
+          QEC
+          <div id="qecs" class="invisible opacity-0 translate-y-2
+                        transition-all duration-300 ease-out
+                        absolute left-0 top-full mt-2 z-[999]
+                        w-[220px] bg-blue-700 text-white p-4
+                        border-t-2 border-amber-400 rounded-md shadow-lg
+                        [&>p]:my-1.5 [&>hr]:opacity-70">
+            <p class="par">Introduction</p>
+            <hr>
+            <p class="par">ORIC</p>
+            <hr>
+            <p class="par">Objectives</p>
+            <hr>
+            <p class="par">QEC Aims</p>
+            <hr>
+            <p class="par">Strategies</p>
+            <hr>
+            <p class="par">Values</p>
+            <hr>
+            <p class="par">Functions</p>
+            <hr>
+            <p class="par">Key Activities</p>
+            <hr>
+            <p class="par">Organizational Structure</p>
+            <hr>
+            <p class="par">UET Mardan Policies</p>
+            <hr>
+            <p class="par">QEC Surveys</p>
+          </div>
+        </li>
+
+        <li id="student" class="group">
+          Students
+          <div id="students" class="invisible opacity-0 translate-y-2
+                        transition-all duration-300 ease-out
+                        absolute left-0 top-full mt-2 z-[999]
+                        w-[200px] bg-blue-600 text-white p-4
+                        border-t-2 border-amber-400 rounded-md shadow-lg
+                        [&>p]:my-1.5 [&>hr]:opacity-70">
+            <p class="par">Dean List</p>
+            <hr>
+            <p class="par">Semester Schedule</p>
+            <hr>
+            <p class="par">Library</p>
+            <hr>
+            <p class="par">Code of Conduct</p>
+            <hr>
+            <p class="par">Hostel</p>
+            <hr>
+            <p class="par">Transport</p>
+            <hr>
+            <p class="par">Sports</p>
+            <hr>
+            <p class="par">Clubs & Societies</p>
+            <hr>
+            <p class="par">Examinations</p>
+            <hr>
+            <p class="par">Downloads</p>
+          </div>
+        </li>
+
+        <li>Downloads</li>
+        <li>Contacts</li>
+
+      </ul>
+    </div>
+
+    <!-- hamburger - only on mobile -->
+    <span class="md:hidden text-white text-3xl cursor-pointer">&#9776;</span>
+
+  </nav>
+  <!-- nav section end -->
+
+  <div class="relative w-full md:h-[calc(100vh-80px)] overflow-hidden">
+
+    <div class="swiper min-w-full h-80 md:min-h-full bg-black border-t-4 border-t-amber-400">
+      <div class="swiper-wrapper h-full">
+
+        <div class="swiper-slide h-full">
+          <img class="w-full h-full object-cover" src="https://www.uetmardan.edu.pk/uetm/assets/homeimages/04-min.jpg"
+            alt="Slide 1">
+        </div>
+
+        <div class="swiper-slide h-full">
+          <img class="w-full h-full object-cover"
+            src="https://www.uetmardan.edu.pk/uetm/assets/homeimages/seminar_hall.jpg" alt="Slide 2">
+        </div>
+
+        <div class="swiper-slide h-full">
+          <img class="w-full h-full object-cover" src="https://www.uetmardan.edu.pk/uetm/assets/homeimages/home_4.jpeg"
+            alt="Slide 3">
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="flex flex-col gap-2 fixed z-[9999] right-0 top-1/3">
+
+      <div
+        class="bg-blue-700 text-white flex items-center justify-between w-48 h-14 px-4 
+              translate-x-[78%] hover:translate-x-0 transition-transform duration-300 ease-in-out cursor-pointer shadow-lg rounded-l-md">
+        <i class="ri-facebook-fill text-xl"></i>
+        <p class="font-bold">LIKE US!</p>
+      </div>
+
+      <div
+        class="bg-sky-500 text-white flex items-center justify-between w-48 h-14 px-4 
+              translate-x-[78%] hover:translate-x-0 transition-transform duration-300 ease-in-out cursor-pointer shadow-lg rounded-l-md">
+        <i class="ri-twitter-fill text-xl"></i>
+        <p class="font-bold">FOLLOW US!</p>
+      </div>
+
+      <div
+        class="bg-yellow-500 text-white flex items-center justify-between w-48 h-14 px-4 
+              translate-x-[78%] hover:translate-x-0 transition-transform duration-300 ease-in-out cursor-pointer shadow-lg rounded-l-md">
+        <i class="ri-camera-fill text-xl"></i>
+        <p class="font-bold">GALLERY!</p>
+      </div>
+
+    </div>
+    <div class="z-20 w-full mt-2 px-4 md:absolute md:bottom-12 md:left-0 md:mt-0 pointer-events-none">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-5 pointer-events-auto">
+          <div class="deptt">Electrical Engineering Department</div>
+          <div class="deptt">Computer Software Engineering Department</div>
+          <div class="deptt">Telecommunication Engineering Department</div>
+
+          <div class="deptt">Computer Science Department</div>
+          <div class="deptt">Mechanical Engineering Department</div>
+          <div class="deptt">Civil Engineering Department</div>
+
+          <div class="deptt">Natural Sciences & Humanities</div>
+          <div class="deptt">Center of AI</div>
+          <div class="deptt">ORIC</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <!-- departments section ends here -->
+
+  <!-- text section start -->
+  <div class="w-full h-64 flex items-center justify-center bg-yellow-500 mt-1.5">
+    <div class="text-white text-3xl text-wrap text-center font-semibold w-3/4 leading-12">
+      <p><span class="font-bold text-blue-900">University of Engineering & Technology Mardan</span> is an emerging
+        public sector university recognized by PEC & HEC</p>
+    </div>
+  </div>
+  <!-- text section ends here -->
+
+  <!-- events and notification section start -->
+
+  <div class="w-full flex flex-col items-center min-h-screen bg-yellow-500 mt-2.5 gap-6">
+    <!-- headings -->
+    <div class="flex items-center justify-around w-full">
+      <h2 class="event">Recent Events</h2>
+      <h2 class="event">News & Reports</h2>
+    </div>
+    <!-- headings -->
+
+    <!-- list of events -->
+    <div class="w-4/5 flex justify-between  px-2  h-[28rem]">
+
+      <!-- left block starts-->
+      <div class="w-[45%] px-8 bg-white pt-2.5 h-full  overflow-y-scroll">
+        <div class="flex justify-between items-center w-full h-auto">
+          <div class="w-24 flex flex-col items-center">
+            <p class="bg-yellow-400 w-full text-center py-1 text-xl">25</p>
+            <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">April 2025</p>
+          </div>
+          <p class="w-72 text-blue-800 font-bold text-xl yellow">Inauguration of the National Outreach Program for Faculty at
+            UET Mardan</p>
+        </div>
+        <br>
+        <hr class="opacity-50">
+        <div class="flex justify-between items-center w-full h-auto">
+          <div class="w-24 flex flex-col items-center">
+            <p class="bg-yellow-400 w-full text-center py-1 text-xl">21</p>
+            <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">Feb 2025</p>
+          </div>
+
+          <p class="w-72 text-blue-800 font-semibold text-xl yellow">
+            Awareness Seminar on Anti-Drug measures in Collaboration with the Anti-Narcotics Force (ANF), the Higher
+            Education Regulatory Authority (HERA), and the Anti-Counter Violence and Extremism Department
+          </p>
+        </div>
+        <br>
+        <hr class="opacity-50">
+        <br>
+        <div class="flex justify-between items-center w-full h-auto">
+          <div class="w-24 flex flex-col items-center">
+            <p class="bg-yellow-400 w-full text-center py-1 text-xl">04</p>
+            <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">Feb 2025</p>
+          </div>
+
+          <p class="w-72 text-blue-800 font-bold text-xl yellow">
+           Unlocking the Power of Cloud: A Hands-On Workshop
+          </p>
+        </div>
+        <br>
+        <hr class="opacity-50">
+        <br>
+        <div class="flex justify-between items-center w-full h-auto">
+          <div class="w-24 flex flex-col items-center">
+            <p class="bg-yellow-400 w-full text-center py-1 text-xl">28</p>
+            <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">Nov 2024</p>
+          </div>
+
+          <p class="w-72 text-blue-800 font-bold text-xl yellow">
+           Seminar on Research Paper Writing from FYP Thesis Held at UET Mardan
+          </p>
+        </div>
+        <br>
+        <hr class="opacity-50">
+        <br>
+        <div class="flex justify-between items-center w-full h-auto">
+          <div class="w-24 flex flex-col items-center">
+            <p class="bg-yellow-400 w-full text-center py-1 text-xl">22</p>
+            <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">Nov 2024</p>
+          </div>
+
+          <p class="w-72 text-blue-800 font-bold text-xl yellow">
+           Seminar on Professional Development & Career Counselling
+          </p>
+        </div>
+        <br>
+        <hr class="opacity-50">
+        <br>
+        <div class="flex justify-between items-center w-full h-auto">
+          <div class="w-24 flex flex-col items-center">
+            <p class="bg-yellow-400 w-full text-center py-1 text-xl">06</p>
+            <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">Aug 2024</p>
+          </div>
+
+          <p class="w-72 text-blue-800 font-bold text-xl yellow">
+           UET Mardan Holds Solidarity Event for kashmir
+
+          </p>
+        </div>
+        <br>
+        <hr class="opacity-50">
+        <br>
+        <div class="flex justify-between items-center w-full h-auto">
+          <div class="w-24 flex flex-col items-center">
+            <p class="bg-yellow-400 w-full text-center py-1 text-xl">02</p>
+            <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">July 2024</p>
+          </div>
+
+          <p class="w-72 text-blue-800 font-bold text-xl yellow">
+           UET Mardan Student Wining 3rd position at Pakistan Engineering Council Capstone Expo-2024
+
+          </p>
+        </div>
+      </div>
+
+      <!-- left block ends -->
+
+
+      <!-- list of events ends -->
+
+      <!-- notifications List starts--
+
+      <!-- right block starts-->
+      <!-- right block starts-->
+<div class="w-[45%] px-8 bg-white pt-2.5 h-full overflow-y-scroll">
+
+  <div class="flex justify-around items-center w-full h-auto">
+    <div class="w-24 flex flex-col items-center">
+      <p class="bg-yellow-400 w-full text-center py-1 text-xl">25</p>
+      <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">April 2025</p>
+    </div>
+    <p class="w-72 text-blue-800 font-bold text-xl yellow">Inauguration of the National Outreach Program for Faculty at UET Mardan</p>
+  </div>
+  <br>
+  <hr class="opacity-50">
+  <br>
+
+  <div class="flex justify-around items-center w-full h-auto">
+    <div class="w-24 flex flex-col items-center">
+      <p class="bg-yellow-400 w-full text-center py-1 text-xl">31</p>
+      <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">Mar 2026</p>
+    </div>
+    <p class="w-72 text-blue-800 font-bold text-xl yellow">Advertisment No 04/2026</p>
+  </div>
+  <br>
+  <hr class="opacity-50">
+  <br>
+
+  <div class="flex justify-around items-center w-full h-auto">
+    <div class="w-24 flex flex-col items-center">
+      <p class="bg-yellow-400 w-full text-center py-1 text-xl">17</p>
+      <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">Mar 2026</p>
+    </div>
+    <p class="w-72 text-blue-800 font-bold text-xl yellow">Scruitny of the Candidates for the Position of Treasurer (BPS-20) on Regular Basis</p>
+  </div>
+  <br>
+  <hr class="opacity-50">
+  <br>
+
+  <div class="flex justify-around items-center w-full h-auto">
+    <div class="w-24 flex flex-col items-center">
+      <p class="bg-yellow-400 w-full text-center py-1 text-xl">12</p>
+      <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">Mar 2026</p>
+    </div>
+    <p class="w-72 text-blue-800 font-bold text-xl yellow">Advertisment No. 03/2026</p>
+  </div>
+  <br>
+  <hr class="opacity-50">
+  <br>
+
+  <div class="flex justify-around items-center w-full h-auto">
+    <div class="w-24 flex flex-col items-center">
+      <p class="bg-yellow-400 w-full text-center py-1 text-xl">10</p>
+      <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">Mar 2026</p>
+    </div>
+    <p class="w-72 text-blue-800 font-bold text-xl yellow">Tender Advertised for Procurement, Customization, Implementation & Support of Commercial ERP Solution for UET Mardan</p>
+  </div>
+  <br>
+  <hr class="opacity-50">
+  <br>
+
+  <div class="flex justify-around items-center w-full h-auto">
+    <div class="w-24 flex flex-col items-center">
+      <p class="bg-yellow-400 w-full text-center py-1 text-xl">08</p>
+      <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">Mar 2026</p>
+    </div>
+    <p class="w-72 text-blue-800 font-bold text-xl yellow">Quantification of Candidates Applied for the Post of Lecturer (BPS-18) on Three Year Contract Basis in the Department of Civil Engineering, UET Mardan</p>
+  </div>
+  <br>
+  <hr class="opacity-50">
+  <br>
+
+  <div class="flex justify-around items-center w-full h-auto">
+    <div class="w-24 flex flex-col items-center">
+      <p class="bg-yellow-400 w-full text-center py-1 text-xl">12</p>
+      <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">Feb 2026</p>
+    </div>
+    <p class="w-72 text-blue-800 font-bold text-xl yellow">MS/MSc/PhD Merit List - Phase-II - Spring 2026 - UET Mardan</p>
+  </div>
+  <br>
+  <hr class="opacity-50">
+  <br>
+
+  <div class="flex justify-around items-center w-full h-auto">
+    <div class="w-24 flex flex-col items-center">
+      <p class="bg-yellow-400 w-full text-center py-1 text-xl">10</p>
+      <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">Feb 2026</p>
+    </div>
+    <p class="w-72 text-blue-800 font-bold text-xl yellow">Notice: Prime Minister's Youth Laptop Scheme - Phase IV</p>
+  </div>
+  <br>
+  <hr class="opacity-50">
+  <br>
+
+  <div class="flex justify-around items-center w-full h-auto">
+    <div class="w-24 flex flex-col items-center">
+      <p class="bg-yellow-400 w-full text-center py-1 text-xl">08</p>
+      <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">Feb 2026</p>
+    </div>
+    <p class="w-72 text-blue-800 font-bold text-xl yellow">PG Admission Test Result - Phase II</p>
+  </div>
+  <br>
+  <hr class="opacity-50">
+  <br>
+
+  <div class="flex justify-around items-center w-full h-auto">
+    <div class="w-24 flex flex-col items-center">
+      <p class="bg-yellow-400 w-full text-center py-1 text-xl">19</p>
+      <p class="bg-blue-800 text-white w-full text-center py-1 font-semibold">Jan 2026</p>
+    </div>
+    <p class="w-72 text-blue-800 font-bold text-xl yellow">GAT-General Test Result (MS/MSc and PhD) - Spring 2026 - UET Mardan</p>
+  </div>
+
+</div>
+<!-- right block ends -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

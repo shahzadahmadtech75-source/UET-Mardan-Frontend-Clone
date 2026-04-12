@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@source "./index.html";
+
+@layer components{
+    .par {
+        @apply text-sm uppercase text-white font-semibold cursor-pointer hover:text-yellow-400;
+    }
+}
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+@layer components {
+    .deptt {
+        @apply bg-blue-800 text-white py-2 text-center font-semibold hover:bg-blue-900 cursor-pointer
+    }
+}
+
+@layer components {
+    .event {
+        @apply text-white text-4xl font-bold
+    }
+}
+@layer components {
+    .yellow {
+        @apply cursor-pointer  hover:!text-amber-400 transition-colors duration-500 ease-in-out
+    }
+}
