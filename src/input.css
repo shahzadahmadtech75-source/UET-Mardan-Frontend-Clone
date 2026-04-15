@@ -26,3 +26,28 @@
         @apply cursor-pointer  hover:!text-amber-400 transition-colors duration-500 ease-in-out
     }
 }
+@layer components {
+    .activity {
+        @apply bg-white w-full text-blue-800 font-semibold text-center py-2 pb-3 text-xl 
+    }
+}
+@layer components {
+    .hov {
+        @apply cursor-pointer transition-all duration-200 ease-in-out  hover:text-yellow-400
+    }
+}
+@layer components {
+    .circle {
+        @apply absolute top-1/2 left-1/2 transform -translate-1/2 w-12 h-12 cursor-pointer rounded-full bg-blue-900 text-white flex items-center justify-center opacity-0 
+    }
+}
+@layer components {
+    .yell {
+        @apply absolute top-0 left-0 w-0 hover:w-full transition-all duration-300 ease-in   h-full bg-yellow-400 opacity-70
+    }
+}
+@layer components {
+    .overlay {
+        @apply hover:[&>.yell]:w-full hover:[&>.circle]:opacity-100
+    }
+}

@@ -292,16 +292,17 @@
 
   <!-- events and notification section start -->
 
-  <div class="w-full flex flex-col items-center min-h-screen bg-yellow-500 mt-2.5 gap-6">
+  <div class="w-full flex flex-col items-center min-h-screen bg-yellow-500 mt-2.5 gap-6" id="notifications">
     <!-- headings -->
-    <div class="flex items-center justify-around w-full">
-      <h2 class="event">Recent Events</h2>
-      <h2 class="event">News & Reports</h2>
-    </div>
+    <div class="w-[64%] h-auto transform -translate-x-1/9 pt-8 flex justify-between items-center">
+        <h2 class="event">Recent Events</h2>
+        <h2 class="event">News & Reports</h2>
+</div>
+    
     <!-- headings -->
 
     <!-- list of events -->
-    <div class="w-4/5 flex justify-between  px-2  h-[28rem]">
+    <div class="w-4/5 flex justify-between  px-2  h-[28rem]" id="events">
 
       <!-- left block starts-->
       <div class="w-[45%] px-8 bg-white pt-2.5 h-full  overflow-y-scroll">
@@ -394,6 +395,7 @@
           </p>
         </div>
       </div>
+      
 
       <!-- left block ends -->
 
@@ -402,7 +404,7 @@
 
       <!-- notifications List starts--
 
-      <!-- right block starts-->
+      <!-- right block starts -->
       <!-- right block starts-->
 <div class="w-[45%] px-8 bg-white pt-2.5 h-full overflow-y-scroll">
 
@@ -514,10 +516,69 @@
   </div>
 
 </div>
+</div>
+
+<div class="w-[53%] h-auto transform -translate-x-1/4 flex justify-between items-center">
+        <h3 class="text-blue-900 text-xl hover:underline underline-offset-2 font-semibold cursor-pointer">Events Archive</h3>
+        <h3  class="text-blue-900 text-xl font-semibold hover:underline underline-offset-2 cursor-pointer">News Archive</h3>
+</div>
 <!-- right block ends -->
+  
+<!--Notifications and events list ends up here-->
+
+<!--Activities section starts-->
+<div class="w-full bg-blue-950 py-28">
+  <h1 class="w-full text-center text-white py-2.5 uppercase text-3xl font-semibold mb-10">UETM at a glance</h1>
+  <div class="w-full flex justify-evenly"> <!-- CArds Container-->
+    <div class="w-1/5 h-4/6"> <!--Card-->
+      <div class="w-full h-full relative overlay">
+        <div class="yell"></div>
+        <img class="w-full h-full object-cover" src="https://www.uetmardan.edu.pk/uetm/assets/labs/lab_5.JPG" alt="">
+        <div class="circle"><i class="ri-links-fill"></i></div>
+      </div> <!--Image-->
+      <h2 class="activity"><span class="hov">Labs</span></h2>
+    </div>
+    <div class="w-1/5 h-4/6"> <!--Card-->
+      <div class="w-full h-full relative overlay">
+        <div class="yell"></div>
+        <img class="w-full h-full object-cover" src="https://www.uetmardan.edu.pk/uetm/assets/sports/sports_1.jpg" alt="">
+        <div class="circle"><i class="ri-links-fill"></i></div>
+      </div> <!--Image-->
+      <h2 class="activity"><span class="hov">Sports</span></h2>
+    </div>
+    <div class="w-1/5 h-4/6"> <!--Card-->
+      <div class="w-full h-full relative overlay">
+        <div class="yell"></div>
+        <img class="w-full h-full object-cover" src="https://www.uetmardan.edu.pk/uetm/assets/societies/societies_1.JPG" alt="">
+        <div class="circle"><i class="ri-links-fill"></i></div>
+      </div> <!--Image-->
+      <h2 class="activity"><span class="hov">Socities</span></h2>
+    </div>
+    <div class="w-1/5 h-4/6"> <!--Card-->
+      <div class="w-full h-full relative overlay">
+        <div class="yell"></div>
+        <img class="w-full h-full object-cover" src="https://www.uetmardan.edu.pk/uetm/assets/facilities/facility_2.jpg" alt="">
+        <div class="circle opacity-0"><i class="ri-links-fill"></i></div>
+      </div> <!--Image-->
+      <h2 class="activity"><span class="hov">Facilities</span></h2>
+    </div>
+  </div>
+</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js"></script>
 </body>
 

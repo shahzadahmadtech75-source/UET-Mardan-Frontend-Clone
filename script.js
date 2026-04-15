@@ -1,3 +1,5 @@
+
+
 // swiper
 var swiper = new Swiper(".swiper", {
     pagination: {
@@ -60,3 +62,18 @@ menuMap.forEach(item => {
     }
   });
 });
+// ----------------------------- Event animation -------------------------------------
+gsap.registerPlugin(ScrollTrigger);
+gsap.from("#events",{
+    x : -100,
+    duration : 1,
+    opacity : 0,
+    scrollTrigger : {
+        trigger : "#events",
+        scroller : "body",
+        start : "top 65%",
+        end : "top 40%",
+        scrub : 2
+    }
+})
+
