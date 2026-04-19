@@ -51,3 +51,13 @@
         @apply hover:[&>.yell]:w-full hover:[&>.circle]:opacity-100
     }
 }
+@layer components {
+    .footer-icon {
+        @apply hover:bg-yellow-400 border px-2 rounded cursor-pointer
+    }
+}
+@layer components {
+    .footer-important-links {
+        @apply [&>i]:text-amber-400 [&>i]:mr-3
+    }
+}
