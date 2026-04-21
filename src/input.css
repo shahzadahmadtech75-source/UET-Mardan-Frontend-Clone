@@ -61,3 +61,7 @@
         @apply [&>i]:text-amber-400 [&>i]:mr-3
     }
 }
+
+/* html {
+  scroll-behavior: smooth;
+} */
