@@ -131,3 +131,45 @@ document.getElementById('backToTop').addEventListener('click', function(e) {
 
     requestAnimationFrame(scrollStep);
 });
+// dropdown menu
+
+
+  let menuOpen = false;
+
+  function toggleMenu() {
+    menuOpen = !menuOpen;
+    const mob = document.getElementById('mobileMenu');
+    const l1 = document.getElementById('l1');
+    const l2 = document.getElementById('l2');
+    const l3 = document.getElementById('l3');
+
+    if (menuOpen) {
+      mob.style.maxHeight = mob.scrollHeight + 2000 + 'px';
+      l1.style.transform = 'translateY(7px) rotate(45deg)';
+      l2.style.opacity = '0';
+      l2.style.transform = 'scaleX(0)';
+      l3.style.transform = 'translateY(-7px) rotate(-45deg)';
+    } else {
+      mob.style.maxHeight = '0';
+      l1.style.transform = '';
+      l2.style.opacity = '1';
+      l2.style.transform = '';
+      l3.style.transform = '';
+    }
+  }
+
+  function toggleSub(id, chevId) {
+    const sub = document.getElementById(id);
+    const chev = document.getElementById(chevId);
+    const isOpen = sub.style.maxHeight && sub.style.maxHeight !== '0px';
+
+    document.querySelectorAll('[id^="sub"]').forEach(el => el.style.maxHeight = '0px');
+    document.querySelectorAll('[id^="chev"]').forEach(el => el.style.transform = '');
+
+    if (!isOpen) {
+      sub.style.maxHeight = sub.scrollHeight + 'px';
+      if (chev) chev.style.transform = 'rotate(180deg)';
+      const mob = document.getElementById('mobileMenu');
+      if (menuOpen) mob.style.maxHeight = mob.scrollHeight + 2000 + 'px';
+    }
+  }
